@@ -1,12 +1,14 @@
-import _ from 'lodash'
+require("./css/index.css")
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+console.log("this is index.js");
+
+const app = document.getElementById('body');
+const div = document.createElement('div');
+div.innerText = 'hello webpack'
+app.appendChild(div);
+
+
+
+
+
+
